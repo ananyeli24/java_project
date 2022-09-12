@@ -1,0 +1,9 @@
+.footer{
+    font-family: 'Josefin Sans';
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    text-align: center;
+}
+.footer:hover{
+    cursor: pointer;
+}

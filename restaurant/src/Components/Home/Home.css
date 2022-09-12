@@ -1,0 +1,25 @@
+html {
+    scroll-behavior: smooth;
+  }
+  .hero-image{
+    margin: 5rem 2rem 1rem 2rem;
+    padding: 25rem 2rem;
+     background-image: url(../images/hero.png);
+    background-size: cover;
+    border-radius: 5px;
+  }
+  .hero-content{
+    /* margin-top: 100px; */
+  }
+.button{
+  font-size: 25px;
+  font-family: 'Josefin Sans';
+  font-weight: 700;
+  border: 2px solid #1b1b1b;
+  padding: 10px 10px 10px 10px;
+  background-color: #ffff;
+}
+.button:hover{
+  border:  #6DDDD0 2px solid;
+  color:#6DDDD0;
+}
