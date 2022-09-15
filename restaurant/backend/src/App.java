@@ -1,23 +1,31 @@
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
+
 public class App {
     public static void main(String[] args)
      {
        
         try
         {
-            Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3001/restaurant", "root" , "LiveandLaugh99");
-            Statement stmt-con.CreateStatement();
-            ResultSet rs-stmt.executeQuery("select fullname from Friends;");
-            while(rs.next())
+            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/restaurant", "root" , "LiveandLaugh99");
+    
+            
+            Statement statement = connection.createStatement();
+
+            ResultSet resultSet = statement.executeQuery("select * from Friends;");
+           
+            while(resultSet.next())
             {
-                System.out.println(rs.getString(1));
+                System.out.println(resultSet.getString("fullname"));
             }
-            con.close();
+            
         }
-        catch(Exeption e)
+        catch(Exception e)
         {
-            System.out.println(e);
+            e.printStackTrace();
         }
     }
 }
