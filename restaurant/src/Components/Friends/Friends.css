@@ -53,4 +53,8 @@ form input {
     color: #6DDDD0;
     cursor: pointer;
   }
-  
+  .contact-sub-content{
+    display:flex;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+  }
